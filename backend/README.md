@@ -37,7 +37,7 @@ A RESTful API backend for a Spotify-like music streaming application built with 
 ### Development Dependencies
 | Package | Version | Purpose |
 |---------|---------|---------|
-| **nodemon** | (not listed) | Auto-restarts server on file changes during development (used via `npm run dev`) |
+| **nodemon** | Not in package.json | Auto-restarts server on file changes during development (used via `npm run dev`). Should be installed globally or added to devDependencies. |
 
 ---
 
@@ -697,6 +697,8 @@ Add the following variables (replace with your actual values):
 MONGO_URI=mongodb://localhost:27017/spotify-clone
 # OR for MongoDB Atlas:
 # MONGO_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/spotify-clone
+
+# Note: Replace 'spotify-clone' with your preferred database name
 
 # JWT Secret (use a strong, random string)
 JWT_SECRET=your_super_secret_jwt_key_minimum_32_characters
